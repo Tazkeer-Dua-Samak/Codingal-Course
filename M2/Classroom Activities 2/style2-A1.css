@@ -1,6 +1,6 @@
 body{
-    
-    background-color: azure;
+    color:white;
+    background-color: rgb(0, 0, 0);
     background-image: url("umbrella.jpg");
     background-repeat: no-repeat;
     background-position: top right;
