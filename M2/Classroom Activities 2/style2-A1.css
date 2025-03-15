@@ -1,0 +1,8 @@
+body{
+    
+    background-color: azure;
+    background-image: url("umbrella.jpg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-attachment: scroll;
+}
