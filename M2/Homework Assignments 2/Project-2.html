@@ -2,8 +2,54 @@
 <html>
     <head>
         <title>Background Gradients and Animations</title>
+        <style>
+            body{
+    color:white;
+    background-color: rgb(0, 0, 0);
+    background-image: url("baking_equip.jpg") ;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: scroll;
+    background-position-x: right;
+    background-position-y: 130px;
+}
+@keyframes example {
+    0% {background-color: rgb(136, 7, 136);}
+    10% {background-color: indigo;}
+    20% {background-color: blue;}
+    30% {background-color: green;}
+    40% {background-color: yellow;}
+    50% {background-color: orange;}
+    60% {background-color: red;}
+    70% {background-color: pink;}
+    80% {background-color: lightcoral;}
+    90% {background-color: lightseagreen;}
+    100% {background-color: lightgoldenrodyellow;}
+}
+#animation {
+    color: black;
+    height:200px;
+    width: 500px;
+    background-color: rgb(136, 7, 136);
+    animation: example 4s infinite;
+}
+#grad1 {
+    height:200px;
+    width: 200px;
+    background-image: linear-gradient(to bottom left, violet,
+     indigo, blue, green, yellow, orange, red,
+      pink, lightcoral,lightseagreen, lightgoldenrodyellow );
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+        </style>
+        <link rel="stylesheet" href="Project-2.css">
     </head>
     <body>
-        
+        <h1 align="center">Here are some random things I put together that are having a party</h1>
+        <br><div id="grad1"><br><br>This is a Gradient<br>with the same colors<br>as in the animation</div>
+    <br><br><br><br><br>
+        <center><div id="animation">This is a colorful animation that never ends</div></center>
     </body>
 </html>
