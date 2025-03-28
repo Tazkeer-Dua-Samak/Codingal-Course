@@ -15,6 +15,6 @@ dt {
 ol dt:nth-child(6) {
    background-color: black;
 }
-a::after {
-    content: 📚;
+.a::after {
+    content: "📚";
 }
