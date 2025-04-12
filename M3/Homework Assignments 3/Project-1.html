@@ -7,32 +7,28 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
         <style>
-            body {
-                font-family: Arial, sans-serif;
-                background-color: #f3f3f3;
-                justify-content: center;
-                margin-top: 50px;
+            * {
+                margin-top: 5px;
+                
             }
-            #box {
-                color: white;
-                display: flex;
-                justify-content: center;
-                font-size: 25px;
-                padding: 10px;
+            .row {
+                border: 4px double salmon;
+                text-indent: 1px;
             }
         </style>
     </head>
     <body>
-        <div class="container-fluid">
-        <div class="" id="box" style="background-color: #f44336;">Item 1</div>
-        <div class="" id="box" style="background-color: #2196F3;">Item 2</div>
-        <div class="" id="box" style="background-color: #FFEB3B;">Item 3</div>
-        <div class="" id="box" style="background-color: #9C27B0;">Item 4</div>
-        <div class="" id="box" style="background-color: #FFC107;">Item 5</div>
-        <div class="" id="box" style="background-color: #009688;">Item 6</div>
-        <div class="" id="box" style="background-color: #c35b3b;">Item 7</div>
-        <div class="" id="box" style="background-color: #673AB7;">Item 8</div>
-    </div>
+        <div class="container text-white">
+            <div class="col">
+            <div class="row" style="margin-left: 440px; background-color: rgb(179, 9, 179); border-color: red;">Item 1</div>
+            <div class="row" style="margin-right: 440px; margin-bottom: 20px; background-color: indigo; border-color: orange;">Item 2</div>
+            <div class="row" style="margin-left: 211px; margin-right: 215px; background-color: rgb(71, 71, 245); border-color: yellow;">Item 3</div>
+            <div class="row" style="margin-right: 320px; margin-left: 100px; background-color: rgb(14, 231, 14); border-color: rgb(10, 143, 10);">Item 4</div>
+            <div class="row" style="margin-left: 300px; margin-right: 120px; background-color: yellow; border-color: rgb(71, 71, 245);">Item 5</div>
+            <div class="row" style="margin-left: 40px; margin-right: 380px; background-color: orange; border-color: indigo;">Item 6</div>
+            <div class="row" style="margin-left: 400px; margin-right: 20px; background-color: red; border-color: rgb(179, 9, 179);">Item 7</div>
+            </div>
+        </div>
     </body>
 </html>
 
