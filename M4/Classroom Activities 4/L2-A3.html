@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Expression Function</title>
+    </head>
+    <body>
+        <p>Setting a default value to a function parameter :</p>
+        <p id="result"></p>
+        <script>
+            function myfunction(x, y) {
+                if (y === undefined) {
+                    y = 3;
+                }
+                return x * y;
+            }
+            document.getElementById("result").innerHTML = myfunction(9);
+        </script>
+    </body>
+</html>
