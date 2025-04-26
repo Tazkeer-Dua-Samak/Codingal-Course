@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Portfolio</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+nav{
+ position: fixed;
+ left: 0;
+ top: 0;
+ width: 100%;
+ height: 75px;
+ background: #8ae1ca;
+ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+nav .navbar{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ height: 100%;
+ max-width: 90%;
+ background: #8ae1ca;
+ margin: auto;
+}
+nav .navbar .logo a{
+  color: #fff;
+  font-size: 27px;
+  font-weight: 600;
+  text-decoration: none;
+}
+nav .navbar .menu{
+  display: flex;
+}
+.navbar .menu li{
+  list-style: none;
+  margin: 0 15px;
+}
+.navbar .menu li a{
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+}
+section{
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  color: #8ae1ca;
+  font-size: 70px;
+}
+#Home{
+  background: #fff;
+}
+#Hobbies{
+  background: #fff;
+}
+#Latest{
+  background: #fff;
+}
+#Contact{
+  background: #fff;
+}
+#Feedback{
+  background: #fff;
+}
+.button a{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  background: #8ae1ca;
+  padding: 7px 12px;;
+  font-size: 18px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.15);
+}
+    </style>
+    </head>
+    <body>
+        <!--Yes, I used some help, mainly I searched for open source code, copied the one I liked and made quite a lot of changes
+        to it. I even changed the color scheme, so really the code I copied was simply to get a structure and inspiration...-->
+          <nav>
+            <div class="navbar">
+              <div class="logo"><a href="#">MyPortfolio</a></div>
+              <ul class="menu">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Hobbies">Hobbies</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#Feedback">Feedback</a></li>
+              </ul>
+            </div>
+          </nav>
+          <section id="Home">
+            
+          </section>
+
+
+          <section id="Hobbies">
+            <div class="container">
+                <h1 style="color: mediumslateblue;"></h1>
+                <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#mycarousel" data-slide-to="1"></li>
+                        <li data-target="#mycarousel" data-slide-to="2"></li>
+                        <li data-target="#mycarousel" data-slide-to="3"></li>
+                    </ol> 
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="read.jpg" alt="flowers">
+                        </div> 
+                        <div class="item">
+                            <img src="rollersk.jpg" alt="flowers">
+                        </div> 
+                        <div class="item">
+                            <img src="rope.jpg" alt="flowers">
+                        </div> 
+                        <div class="item">
+                            <img src="bad.jpg" alt="flowers">
+                        </div> 
+                    </div>
+                    <a class="left carousel-control" href="#mycarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#mycarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div> 
+          </section>
+
+
+          <section id="Contact">Contact Section</section>
+
+
+          <section id="Feedback">Feedback Section</section>
+
+
+          <div class="button">
+            <a href="#Home"><i class="fas fa-arrow-up"></i></a>
+          </div>
+    </body>
+        </html>
