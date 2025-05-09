@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Arrays</title>
+    </head>
+    <body style="text-align: center;">
+        <h2>join() and pop()</h2>
+        <p id="joining"></p>
+        <p id="popping"></p>
+        <p id="nothing"></p>
+        <script>
+            var vegetable = ["Eggplant", "Spinach", "Potato", "Bitter Gourd"];
+            document.getElementById("nothing").innerHTML = vegetable;
+            document.getElementById("joining").innerHTML = vegetable.join("*");
+            vegetable.pop();
+            document.getElementById("popping").innerHTML = vegetable;
+        </script>
+    </body>
+</html>
