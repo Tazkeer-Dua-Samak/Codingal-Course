@@ -3,7 +3,27 @@
     <head>
         <title></title>
     </head>
-    <body>
-        
+    <body style="text-align: center;">
+        <h2>JavaScript String Methods and Loops</h2>
+        <h4>Numbers from 1 to 100</h4>
+        <div class="container mt-5">
+            <button class="btn btn-primary" onclick="generateRandomNumbers()">Generate Numbers</button>
+            <div id="numbers" class="mt-3"></div>
+        </div>
+        <p id="result"></p>
+        <script>
+            //I had to do some research on generating random set of numbers and ended up not understanding anything except that the following code works...
+            function generateRandomNumbers() {
+            const randomNumbers = Array.from({length: 5}, () => Math.floor(Math.random() * 100));
+            document.getElementById('numbers').innerText = randomNumbers.join(', ');
+        }
+            var number = "";
+            for(i = 1; i < 11; i++)  {
+                number += i + "<br>";
+            }
+            document.write("The random value is " + Math.floor(Math.random() * 100) + "<br><br>");
+            var date = new Date();
+            document.write("Today's Date is " + date.getDate());
+        </script>
     </body>
 </html>
