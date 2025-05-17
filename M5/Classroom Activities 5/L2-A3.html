@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>JavaScript Static Class Methods</h2>
+        <p id="hello"></p>
+        <p id="hi"></p>
+        <p id="welcome"></p>
+        <script>
+            class student {
+                constructor(name) {
+                    this.stdname = name;
+                }
+                static hello() {
+                    return "Hello!!!";
+                }
+                static welcome(x) {
+                    return "Welcome " + x.stdname;
+                }
+                hi() {
+                    return "Hi " + this.stdname;
+                }
+            }
+            myname = new student("Amy");
+            document.getElementById("hello").innerHTML = student.hello();
+            document.getElementById("hi").innerHTML = myname.hi();
+            document.getElementById("welcome").innerHTML = student.welcome(myname);
+        </script>
+    </body>
+</html>
