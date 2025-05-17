@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM Example</title>
+    <title>DOM Manipulation</title>
     <style>
-        body { font-family: Arial, sans-serif; }
-        #source { color: blue; }
-        #target { color: green; }
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center;
+        }
+        #source { 
+            color: blue; 
+        }
+        #target { 
+            color: green; 
+        }
     </style>
 </head>
 <body>
-    <h1>DOM Manipulation Example</h1>
+    <h1>DOM Manipulation</h1>
     <p id="source">Hello, I am the source text!</p>
     <p id="target">I will change!</p>
-    <button onclick="copyText()">Copy Text</button>
-
-    <script>
-        function copyText() {
-            const sourceText = document.getElementById('source').innerText;
-            document.getElementById('target').innerText = sourceText;
-        }
-    </script>
+    <button onclick="myText()">Change My Text</button>
+    <script src="Project-6.js"></script>
 </body>
 </html>
