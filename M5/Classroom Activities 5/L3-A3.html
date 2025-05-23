@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <p id="value"></p>
+        <script>
+                var numbers = [67, 98, 34, 567, 12];
+                function myFunction(num) {
+                    return num * 10;
+                }
+                var result = numbers.map(myFunction);
+                document.getElementById("value").innerHTML = result;
+        </script>
+    </body>
+</html>
