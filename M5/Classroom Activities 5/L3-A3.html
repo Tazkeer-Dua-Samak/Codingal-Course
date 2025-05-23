@@ -2,6 +2,18 @@
 <html>
     <head></head>
     <body>
-        
+        <button onclick="myFunction()">Try It</button>
+        <p id="result"></p>
+        <script>
+                function myFunction() {
+                    var x = 44;
+                    var y = 56;
+                    var a = eval("x + y") + "<br>";
+                    var b = eval("3 * 3") + "<br>";
+                    var c = eval("y - x") + "<br>";
+                    var res = a + b + c;
+                    document.getElementById("result").innerHTML = res;
+                }
+        </script>
     </body>
 </html>
