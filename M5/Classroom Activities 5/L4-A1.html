@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body style="text-align: center;">
+        <h2>JavaScript String Methods</h2>
+        <p id="search"></p>
+        <p id="replace"></p>
+        <p id="string"></p>
+        <script>
+            var str = "hello!! I'm Alive";
+            var search = str.search("Alive");
+            var txt = str.replace("I'm", "I'm Alive");
+            document.getElementById("search").innerHTML = search;
+            document.getElementById("replace").innerHTML = txt;
+            var x = 65;
+            var y = 23;
+            document.getElementById("string").innerHTML = String(x) + String(y);
+        </script>
+    </body>
+</html>
