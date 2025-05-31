@@ -1,6 +1,53 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Inheritance with Method Overriding</title>
+</head>
+<body>
+    <h1>Class Inheritance with Method Overriding</h1>
+    <button onclick="displayInfo()">Display Info</button>
+    <div id="info"></div>
+
+    <script>
+        class Animal {
+            constructor(type) {
+                this.type = type;
+            }
+
+            makeSound() {
+                return "Some generic animal sound.";
+            }
+
+            static info() {
+                return "Animals are living beings.";
+            }
+        }
+
+        class Dog extends Animal {
+            constructor(name) {
+                super("Dog");
+                this.name = name;
+            }
+
+            makeSound() {
+                return "Woof! Woof!";
+            }
+
+            getInfo() {
+                return `Name: ${this.name}, Type: ${this.type}, Sound: ${this.makeSound()}`;
+            }
+        }
+
+        function displayInfo() {
+            const dog = new Dog("Rex");
+            const info = `
+                ${dog.getInfo()}<br>
+                ${Dog.info()}
+            `;
+            document.getElementById("info").innerHTML = info;
+        }
+    </script>
+</body>
 </html>
