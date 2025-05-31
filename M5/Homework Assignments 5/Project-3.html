@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Sort Array</title>
+</head>
+<body style="text-align: center;">
+    <h1>~: Custom Sort Array :~</h1>
+    <input type="text" id="numberInput" placeholder="Enter numbers separated by commas">
+    <p id="output"></p>
+    <button onclick="sortAscending()">Sort Ascending</button>
+    <button onclick="sortDescending()">Sort Descending</button>
+
+    <script>
+        function sortAscending() {
+            const numbers = document.getElementById('numberInput').value.split(',').map(Number);
+            const sortedArray = numbers.slice().sort((a, b) => a - b);
+            document.getElementById('output').innerText = 'Ascending: ' + sortedArray.join(', ');
+        }
+
+        function sortDescending() {
+            const numbers = document.getElementById('numberInput').value.split(',').map(Number);
+            const sortedArray = numbers.slice().sort((a, b) => b - a);
+            document.getElementById('output').innerText = 'Descending: ' + sortedArray.join(', ');
+        }
+    </script>
+</body>
+</html>
