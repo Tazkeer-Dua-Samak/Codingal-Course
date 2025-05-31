@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Try-Catch Example</title>
+</head>
+<body>
+    <h1>Basic Try-Catch Example</h1>
+    <button onclick="showError()">Click Me</button>
+    <p id="errorMessage"></p>
+
+    <script>
+        function showError() {
+            try {
+                // Intentionally causing an error
+                let result = nonExistentFunction();
+            } catch (error) {
+                document.getElementById("errorMessage").innerText = "Error: " + error.message;
+            }
+        }
+    </script>
+</body>
+</html>
