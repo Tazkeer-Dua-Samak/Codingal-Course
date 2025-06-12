@@ -26,24 +26,21 @@
         document.getElementById('userForm').addEventListener('submit', function(event) {
             event.preventDefault();
 
-            // Get values
             const name = document.getElementById('name').value.trim();
             const age = document.getElementById('age').value.trim();
 
-            // Name validation (only alphabetic characters allowed)
-            const nameRegex = /^[A-Za-z\s]+$/;  // This allows letters and spaces
+            const nameRegex = /^[A-Za-z\s]+$/;
             if (!name.match(nameRegex)) {
                 alert("Name must contain only letters.");
-                return;  // Stops the function execution here
+                return;
             }
 
-            // Age validation (should be a number and >= 18)
+            
             if (age < 18 || age === "") {
                 alert("You must be at least 18 years old.");
                 return;
             }
 
-            // Success message
             alert("Success! Your name is " + name + " and you are " + age + " years old.");
         });
     </script>
