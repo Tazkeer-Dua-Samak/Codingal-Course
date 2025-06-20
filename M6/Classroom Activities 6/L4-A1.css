@@ -1,0 +1,57 @@
+body {
+    font-family: cursive;
+    background-color: rgb(0, 0, 0);
+    
+}
+#container {
+    width: 700px;
+    height: 550px;
+    margin: 20px auto;
+    background-image: url("grad2.jpg");
+    width: 1536px;
+    height: 1024px;
+    padding-top: 400px;
+}
+#calculator {
+    width: 320px;
+    height: 520px;
+    background-color: hsla(316, 100%, 51%, 0.47);
+    margin: 0px auto;
+    top: 20px;
+    position: relative;
+    border-radius: 50px;
+}
+#keyboard {
+    height: 400px;
+}
+.operator,
+.number,
+.empty {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+.number,
+.empty {
+    background-color: crimson;
+}
+.operator {
+    background-color: blueviolet;
+}
+.operator,
+.number {
+    cursor: pointer;
+}
+.operator:active,
+.number:active {
+    font-size: 30px;
+}
+.operator:active,
+.number:active {
+    outline: 2px solid deepskyblue ;
+}
