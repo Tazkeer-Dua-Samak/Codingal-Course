@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-image: url("rest3.png");
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: rgb(67, 1, 1); 
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  background-color: #f0f0f0; 
+  z-index: 100;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar .nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  display: block;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  background-color: red; 
+  transform: scale(1.1);
+}
+
+#footer {
+    padding-left: 400px;
+}
+
+.nav-link1 {
+    text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  display: block;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.span {
+    color: white;
+}
