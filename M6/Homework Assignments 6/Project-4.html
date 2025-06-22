@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Project-4.html">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income and Expense Tracker</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Income and Expense Tracker</h1>
+        <form id="trackerForm">
+            <div class="form-group">
+                <label for="income">Income:</label>
+                <input type="number" class="form-control" id="income" required>
+            </div>
+            <div class="form-group">
+                <label for="expense">Expense:</label>
+                <input type="number" class="form-control" id="expense" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Add</button>
+        </form>
+        <div class="result">
+            <h3>Total Income: <span id="totalIncome">0</span></h3>
+            <h3>Total Expense: <span id="totalExpense">0</span></h3>
+            <h3>Balance: <span id="balance">0</span></h3>
+        </div>
+    </div>
+
+    <script>
+        let totalIncome = 0;
+        let totalExpense = 0;
+
+        document.getElementById('trackerForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const income = parseFloat(document.getElementById('income').value);
+            const expense = parseFloat(document.getElementById('expense').value);
+            totalIncome += income;
+            totalExpense += expense;
+            document.getElementById('totalIncome').innerText = totalIncome;
+            document.getElementById('totalExpense').innerText = totalExpense;
+            document.getElementById('balance').innerText = totalIncome - totalExpense;
+            this.reset();
+        });
+    </script>
+</body>
+</html>
