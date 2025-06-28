@@ -1,6 +1,6 @@
-x = input("Enter a value of x : ")
-y = input("Enter a value of y : ")
-z = input("Enter a value of z : ")
+x = 5
+y = 9
+z = 1
 
 temp = x
 x = y
