@@ -1,6 +1,6 @@
 class tom():
     name = "Tom"
-    working = "I often chase Jerry."
+    working = "I often chase Jerry as he is the most annoying rodent."
 
     def introduction(self):
         print("Hi! My name is", self.name)
