@@ -26,7 +26,8 @@ def game_window():
         result_window.geometry("350x200")
         result_window.configure(bg="#E0E0E0")
 
-        choice_label = tk.Label(result_window, text=f"You chose: {user_choice}\nComputer chose: {computer_choice}", font=("Arial", 12), bg="#E0E0E0")  #we can change the font of text and even bolden it by using it in Label and Button widgets.
+        # we can change the font of text and even bolden it by using it in Label and Button widgets.
+        choice_label = tk.Label(result_window, text=f"You chose: {user_choice}\nComputer chose: {computer_choice}", font=("Arial", 12), bg="#E0E0E0")
         choice_label.pack(pady=10)
 
         result_label = tk.Label(result_window, text=result, font=("Arial", 16, "bold"), bg="#E0E0E0")
@@ -36,7 +37,7 @@ def game_window():
         play_again_label.pack(pady=10)
         
         def play_again_yes():
-            result_window.destroy() # Using .destroy(), i can close the window when no longer needed
+            result_window.destroy()  # Using .destroy(), it will automatically close the window when I press the button
         
         def play_again_no():
             result_window.destroy()
@@ -51,7 +52,7 @@ def game_window():
         result_window.mainloop()
 
     instruction_label = tk.Label(game_window, 
-                                 text="Click one of the following to choose as your weapon", 
+                                 text="Click an image to choose your weapon", 
                                  font=("Arial", 14), 
                                  bg="#F0F0F0")
     instruction_label.pack(pady=20)
@@ -59,34 +60,40 @@ def game_window():
     button_frame = tk.Frame(game_window, bg="#F0F0F0")
     button_frame.pack(pady=10)
 
+    # Loading the images and creating buttons with images
+    rock_image = tk.PhotoImage(file="rps_piece_1.png")
+    paper_image = tk.PhotoImage(file='rps_piece_2.png')
+    scissors_image = tk.PhotoImage(file='rps_piece_3.png') 
+
     rock_button = tk.Button(button_frame, 
-                            text="Rock", 
-                            command=lambda: play_game("Rock"), #lambda is used when we need to pass arguments 
-                            width=10, 
-                            font=("Arial", 12, "bold"), 
+                            image=rock_image, 
+                            # lambda is used when we need to pass arguments
+                            command=lambda: play_game("Rock"),
+                            width=100,
+                            height=100,
                             bg="#2196F3", 
-                            fg="white", 
                             relief=tk.RAISED)
+    rock_button.image = rock_image 
     rock_button.pack(side="left", padx=10)
 
     paper_button = tk.Button(button_frame, 
-                             text="Paper", 
+                             image=paper_image, 
                              command=lambda: play_game("Paper"), 
-                             width=10, 
-                             font=("Arial", 12, "bold"), 
+                             width=100,
+                             height=100,
                              bg="#8BC34A", 
-                             fg="white", 
                              relief=tk.RAISED)
+    paper_button.image = paper_image  
     paper_button.pack(side="left", padx=10)
 
     scissors_button = tk.Button(button_frame, 
-                                text="Scissors", 
+                                image=scissors_image, 
                                 command=lambda: play_game("Scissors"), 
-                                width=10, 
-                                font=("Arial", 12, "bold"), 
+                                width=100,
+                                height=100,
                                 bg="#FF5722", 
-                                fg="white", 
                                 relief=tk.RAISED)
+    scissors_button.image = scissors_image  # I read that if you don't keep a reference to the image it may be deleted during execution
     scissors_button.pack(side="left", padx=10)
 
 root = tk.Tk()
