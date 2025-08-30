@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>O(1) Example</title>
+    </head>
+    <body>
+        <h2>O(1) Example</h2>
+        <p>Enter a number: </p>
+
+        <input id="input" type="number">
+        <button onclick="run()">Run</button>
+
+        <p>First Element of [10, 20, 30] is: <span id="out">-</span></p>
+
+        <script>
+            function run() {
+                var arr = [10, 20, 30];
+                var first = arr[0];
+
+                document.getElementById("out").innerText = first;
+            }
+        </script>
+    </body>
+</html>
