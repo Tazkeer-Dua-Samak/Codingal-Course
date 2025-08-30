@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>O(n) Example</title>
+    </head>
+    <body>
+        <h2>O(n) Example</h2>
+        <p>Enter any number n: </p>
+
+        <input id="n" type="number">
+        <button onclick="run()">Run</button>
+
+        <p>Counting from 1 to n : </p>
+        <p id="out"></p>
+
+        <script>
+            function run() {
+                var n = document.getElementById("n").value;
+                var text = "";
+                for (var i = 1; i <= n; i++) {
+                    text += i + " ";
+                }
+                document.getElementById("out").innerText = text;
+            }
+        </script>
+    </body>
+</html>
