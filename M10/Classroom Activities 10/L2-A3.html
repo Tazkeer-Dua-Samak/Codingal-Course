@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>O(n²) Example</title>
+    </head>
+    <body>
+        <h2>O(n²) Example</h2>
+
+        <input id="n" type="number">
+        <button onclick="run()">Run</button>
+
+        <p id="out"></p>
+
+        <script>
+            function run() {
+                var n = document.getElementById("n").value;
+                var text = "";
+                for (var i = 1; i <= n; i++) {
+                    for (var j = 1; j <= n; j++) {
+                        text += i + "," + j + " ";
+                    }
+                    text += "<br>"
+                }
+                document.getElementById("out").innerHTML = text;
+            }
+        </script>
+    </body>
+</html>
