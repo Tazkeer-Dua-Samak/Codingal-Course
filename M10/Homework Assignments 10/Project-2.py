@@ -10,5 +10,8 @@ def myFunction(n):
     for i in range(0,100):
         print("Third Loop", i)
 
+    print("\nTime Complexity: O(n)")
+
+
 n = int(input("Please enter a number: "))
-obj = myFunction(n)
+myFunction(n)
