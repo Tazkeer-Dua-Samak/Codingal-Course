@@ -1,5 +1,9 @@
-def is_2_digit(num):
-    return (10 <= num >= 99)
+def is_prime(num):
+    for i in range(2, num):
+        if num % i == 0:
+            return False
+    return True
 
-num = int(input("Enter a number: "))
-print(is_2_digit(5))
+for num in range(10, 100):
+    if is_prime(num):
+        print(num)
