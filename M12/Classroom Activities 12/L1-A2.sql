@@ -15,8 +15,10 @@ INSERT INTO Salesman (Salesman_id, name, city, Commission) VALUES
 
 SELECT * FROM Salesman;
 
+SELECT name || '(' || SUBSTR(city, 1, 1) || ')' AS Name FROM Salesman;
+
 SELECT * FROM Salesman
-WHERE city == "Paris"
+WHERE city == "Paris";
 
 CREATE TABLE IF NOT EXISTS Orders (
     ord_no TEXT PRIMARY KEY,
