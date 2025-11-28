@@ -54,3 +54,6 @@ trophy_history_df = pd.read_sql("""SELECT *
                                 FROM trophy_history
                                 WHERE team_name = 'Islamabad United';""", conn)
 print(trophy_history_df)
+
+
+#For reasons unknown I am informing you that the data shown may not entirely be accurate as I was not the one who researched all this
