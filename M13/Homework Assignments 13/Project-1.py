@@ -1,7 +1,7 @@
 import pandas as pd
 import sqlite3
 
-conn = sqlite3.connect('psl_database.db')
+conn = sqlite3.connect('database_psl.db')
 
 print("\n--- All Teams ---")
 teams_df = pd.read_sql("SELECT * FROM teams;", conn)
