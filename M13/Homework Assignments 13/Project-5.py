@@ -20,13 +20,6 @@ player_salary = pd.read_sql("""SELECT value
 print("\nALL FROM PLAYERS SALARY\n")
 print(player_salary)
 
-
-
-
-
-
-
-
 i_dont_know_what_to_name_it = pd.read_sql("""SELECT DISTINCT nameTeam, namePlayer, value
                                           FROM Player_Salary 
                                           AND (SELECT is_active 
