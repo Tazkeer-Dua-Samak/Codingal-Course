@@ -3,7 +3,6 @@ import pandas as pd
 
 conn = sqlite3.connect("database_psl.db")
 
-
 print("--- All matches where Lahore Qalandars won ---")
 
 matches_lq_df = pd.read_sql("""
